@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:orientation="vertical" android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="12dp"
+        android:background="#909090" />
+
+    <TextView
+        android:id="@+id/nameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/divider"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nameLbl"
+        android:layout_below="@id/nameLbl"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/mimeTypeLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/name"
+        android:layout_marginTop="12dp"
+        android:text="Mime-Type"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mimeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mimeTypeLbl"
+        android:layout_below="@id/mimeTypeLbl"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/sizeLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mimeType"
+        android:layout_below="@id/mimeType"
+        android:layout_marginTop="12dp"
+        android:text="Size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sizeLbl"
+        android:layout_below="@id/sizeLbl"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/dateCreatedLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/size"
+        android:layout_below="@id/size"
+        android:layout_marginTop="12dp"
+        android:text="Date Created"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dateCreatedLbl"
+        android:layout_below="@id/dateCreatedLbl"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/lastModifiedDateLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dateCreated"
+        android:layout_below="@id/dateCreated"
+        android:layout_marginTop="12dp"
+        android:text="Last Modified"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lastModifiedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lastModifiedDateLbl"
+        android:layout_below="@id/lastModifiedDateLbl"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
